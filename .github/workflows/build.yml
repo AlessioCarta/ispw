@@ -21,6 +21,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '11'
+          distribution: 'temurin' # Specifica la distribuzione
 
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v4
